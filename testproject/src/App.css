@@ -1,42 +1,76 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.ProfileCard {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 16px;
+  width: 400px;
+  height: 450px;
+  justify-content: start;
+  align-items: center;
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.HeaderImage {
+  width: 400px;
+display: block;
+border-radius:10px 10px 0 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProfileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: .7rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ProfilePic {
+
+  border-radius: 80px;
+  position: absolute;
+ 
+  left: 50%;
+  transform: translate( -50%, -50% );
+  border: 6px solid #FFFFFF;
+  margin-bottom: 150px;
+  
 }
 
-.card {
-  padding: 2em;
+.ProfileNameLocation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+ 
+  position: relative;
+
+  
+  
+
+}
+.ProfileName {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 20px;
+
 }
 
-.read-the-docs {
-  color: #888;
+.location {
+  color: #4f4f4f;
+  font-weight: 200;
+  padding: 15px;
+  
+}
+
+.collectall {
+  border-top: 1px solid  hsla(0, 0%, 59%, 30%);
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+padding-top: 12px;
 }

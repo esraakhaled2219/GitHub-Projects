@@ -2,32 +2,45 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import imagevictor from './assets/images/imagevictor.jpg'
+import bgpatterncard from './assets/images/bgpatterncard.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='ProfileCard'>
+      
+      <img className='HeaderImage' src={bgpatterncard} />
+      
+       
+     
+      <div className='ProfileInfo'>
+        <img className='ProfilePic' src={imagevictor} />
+        <div className='ProfileNameLocation'>
+          <label className='ProfileName'>Victor crest   26</label>
+          <label className='location'>London</label>
+         
+        </div>
+        <div className='collectall'>
+          <div className='numberswtitels'>
+            <h2>80k</h2>
+            <p>Followers</p>
+          </div>
+          <div className='numberswtitels'>
+            <h2>803k</h2>
+            <p>Likes</p>
+          </div>
+          <div className='numberswtitels'>
+            <h2>104k</h2>
+            <p>Photos</p>
+          </div>
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
+     
     </>
   )
 }
